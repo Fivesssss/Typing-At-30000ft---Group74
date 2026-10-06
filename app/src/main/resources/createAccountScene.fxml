@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.airplanegame.sceneControllers.CreateAccountController">
+    <children>
+        <Text fx:id="title" fill="WHITE" layoutY="150.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="7.0" styleClass="menu" text="CREATE ACCOUNT" textAlignment="CENTER" wrappingWidth="1920.0">
+            <font>
+                <Font size="96.0" />
+            </font>
+        </Text>
+        <Text layoutX="553.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="USERNAME" wrappingWidth="343.13671875">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+        <TextField fx:id="usernameInput" layoutX="553.0" layoutY="458.0" prefHeight="59.0" prefWidth="814.0" styleClass="loginTextbox" stylesheets="@stylesheet.css">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="passwordInput" layoutX="553.0" layoutY="608.0" prefHeight="59.0" prefWidth="814.0" styleClass="loginTextbox" stylesheets="@stylesheet.css">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </PasswordField>
+        <Text layoutX="553.0" layoutY="588.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="PASSWORD" wrappingWidth="343.13671875">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+        <Text fx:id="errorText" fill="RED" layoutX="553.0" layoutY="700.0" styleClass="menu" textAlignment="CENTER" wrappingWidth="814.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button fx:id="loginButton" layoutX="809.0" layoutY="924.0" mnemonicParsing="false" onAction="#loginButtonHandler" prefHeight="108.0" prefWidth="333.0" style="-fx-font-size: 18; -fx-pref-height: 100; -fx-pref-width: 300;" styleClass="gameOverMenuButton" stylesheets="@stylesheet.css" text="LOGIN">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Button>
+        <Button fx:id="createAccountButton" layoutX="1051.0" layoutY="775.0" mnemonicParsing="false" onAction="#createAccountButtonHandler" prefHeight="108.0" prefWidth="333.0" style="-fx-pref-width: 300; -fx-font-size: 18; -fx-pref-height: 100;" styleClass="gameOverRestartButton" stylesheets="@stylesheet.css" text="CREATE ACCOUNT">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Button>
+      <Text layoutX="789.0" layoutY="920.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="Already have an account?" textAlignment="CENTER" wrappingWidth="343.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="teacherButton" layoutX="718.0" layoutY="775.0" mnemonicParsing="false" onAction="#teacherButtonHandler" prefHeight="108.0" prefWidth="165.0" styleClass="accountTypeButton" stylesheets="@stylesheet.css" text="TEACHER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="studentButton" layoutX="553.0" layoutY="775.0" mnemonicParsing="false" onAction="#studentButtonHandler" prefHeight="108.0" prefWidth="165.0" styleClass="accountTypeButton" stylesheets="@stylesheet.css" text="STUDENT">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <Text layoutX="552.0" layoutY="761.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="ACCOUNT TYPE" textAlignment="CENTER" wrappingWidth="333.5999999999999">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="teacherCodeWindow" arcHeight="5.0" arcWidth="5.0" fill="#aeaeae" height="505.0" layoutX="549.0" layoutY="415.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 2;" visible="false" width="824.0" />
+      <Text fx:id="teacherCodeNeeded" layoutX="549.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="TEACHER CODE NEEDED" textAlignment="CENTER" visible="false" wrappingWidth="824.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="enterTeacherCode" layoutX="549.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="ENTER TEACHER CODE TO CREATE ACCOUNT" textAlignment="CENTER" visible="false" wrappingWidth="824.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="confirmButton" layoutX="857.0" layoutY="796.0" mnemonicParsing="false" onAction="#confirmButtonHandler" prefHeight="66.0" prefWidth="203.0" style="-fx-border-width: 3;" styleClass="coolButton" stylesheets="@stylesheet.css" text="CONFIRM" visible="false">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Button layoutX="1329.0" layoutY="415.0" mnemonicParsing="false" onAction="#xButtonHandler" prefHeight="24.0" prefWidth="43.0" stylesheets="@stylesheet.css" text="X" visible="false" fx:id="xButton">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="teacherCodeInput" layoutX="784.0" layoutY="675.0" prefHeight="59.0" prefWidth="350.0" styleClass="loginTextbox" stylesheets="@stylesheet.css" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fx:id="teacherCodeErrorMessage" fill="RED" layoutX="549.0" layoutY="772.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="INCORRECT TEACHER CODE!" textAlignment="CENTER" visible="false" wrappingWidth="824.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+    </children>
+
+</AnchorPane>

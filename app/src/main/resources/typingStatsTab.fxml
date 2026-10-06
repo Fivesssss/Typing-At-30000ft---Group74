@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="990.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.airplanegame.sceneControllers.TypingStatsTabController">
+   <children>
+      <Text layoutX="288.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40px;" styleClass="pixelText" text="VIEW TYPING STATISTICS" textAlignment="CENTER" wrappingWidth="1297.4701080322266" />
+      <ChoiceBox fx:id="usernameChoiceBox" style="-fx-font-size: 18px;" styleClass="pixelText" layoutX="704.0" layoutY="194.0" prefHeight="43.0" prefWidth="511.0" />
+      <Text layoutX="466.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14px;" styleClass="pixelText" text="AVERAGE WPM:" textAlignment="RIGHT" wrappingWidth="476.8034210205078" />
+      <Text layoutX="384.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14px;" styleClass="pixelText" text="PEAK WPM:" textAlignment="RIGHT" wrappingWidth="552.1367340087891" />
+      <Text layoutX="547.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14px;" styleClass="pixelText" text="ACCURACY %:" textAlignment="RIGHT" wrappingWidth="389.47010803222656" />
+      <Text layoutX="593.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14px;" styleClass="pixelText" text="ERROR COUNT:" textAlignment="RIGHT" wrappingWidth="343.4700469970703" />
+      <Text layoutX="408.0" layoutY="617.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14px;" styleClass="pixelText" text="TOTAL TIME PLAYED (sec):" textAlignment="RIGHT" wrappingWidth="528.1367340087891" />
+      <Text layoutX="354.0" layoutY="692.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14px;" styleClass="pixelText" text="ENDLESS HIGH SCORE:" textAlignment="RIGHT" wrappingWidth="582.1367340087891" />
+      <Text layoutX="332.0" layoutY="775.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14px;" styleClass="pixelText" text="HIGHEST LEVEL REACHED:" textAlignment="RIGHT" wrappingWidth="604.6667073567708" />
+      <Text layoutX="704.0" layoutY="866.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14px;" styleClass="pixelText" text="WORDS TYPED:" textAlignment="RIGHT" wrappingWidth="232.8034210205078" />
+      <Label fx:id="avgWpmLabel" style="-fx-font-size: 12px;" styleClass="pixelText" layoutX="960.0" layoutY="285.0" prefHeight="36.0" prefWidth="528.0" text="Label" />
+      <Label fx:id="peakWpmLabel" style="-fx-font-size: 12px;" styleClass="pixelText" layoutX="960.0" layoutY="365.0" prefHeight="36.0" prefWidth="528.0" text="Label" />
+      <Label fx:id="accuracyLabel" style="-fx-font-size: 12px;" styleClass="pixelText" layoutX="960.0" layoutY="441.0" prefHeight="36.0" prefWidth="528.0" text="Label" />
+      <Label fx:id="errorCountLabel" style="-fx-font-size: 12px;" styleClass="pixelText" layoutX="960.0" layoutY="517.0" prefHeight="36.0" prefWidth="528.0" text="Label" />
+      <Label fx:id="totalTimePlayedLabel" style="-fx-font-size: 12px;" styleClass="pixelText" layoutX="960.0" layoutY="594.0" prefHeight="36.0" prefWidth="528.0" text="Label" />
+      <Label fx:id="highScoreLabel" style="-fx-font-size: 12px;" styleClass="pixelText" layoutX="960.0" layoutY="669.0" prefHeight="36.0" prefWidth="528.0" text="Label" />
+      <Label fx:id="levelProgressionLabel" style="-fx-font-size: 12px;" styleClass="pixelText" layoutX="960.0" layoutY="752.0" prefHeight="36.0" prefWidth="528.0" text="Label" />
+      <Label fx:id="wordsTypedLabel" style="-fx-font-size: 12px;" styleClass="pixelText" layoutX="960.0" layoutY="843.0" prefHeight="36.0" prefWidth="528.0" text="Label" />
+   </children>
+</AnchorPane>

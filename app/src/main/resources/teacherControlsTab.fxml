@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="990.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.airplanegame.sceneControllers.TeacherControlsTabController">
+   <children>
+      <ChoiceBox fx:id="usernameChoiceBox" layoutX="393.0" layoutY="296.0" prefHeight="25.0" prefWidth="548.0" style="-fx-font-size: 18px;" styleClass="pixelText" />
+      <Button layoutX="792.0" layoutY="650.0" mnemonicParsing="false" onAction="#resetLeaderboardButtonHandler" prefHeight="90.0" prefWidth="370.0" style="-fx-font-size: 14px;" styleClass="dangerButton" text="RESET LEADERBOARD" />
+      <Button layoutX="977.0" layoutY="275.0" mnemonicParsing="false" onAction="#resetTypingStatsButtonHandler" prefHeight="67.0" prefWidth="379.0" style="-fx-font-size: 14px;" styleClass="dangerButton" text="RESET TYPING STATISTICS" />
+      <Button layoutX="1398.0" layoutY="275.0" mnemonicParsing="false" onAction="#resetPasswordButtonHandler" prefHeight="67.0" prefWidth="379.0" style="-fx-font-size: 14px;" styleClass="dangerButton" text="RESET PASSWORD" />
+      <Text layoutX="604.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40px;" styleClass="pixelText" text="CONTROL ACCOUNTS" textAlignment="CENTER" wrappingWidth="711.3333638509114" />
+      <Text layoutX="465.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40px;" styleClass="pixelText" text="RESET LEADERBOARD" textAlignment="CENTER" wrappingWidth="1023.9999287923176" />
+      <Label fx:id="statusLabel" layoutX="153.0" layoutY="862.0" prefHeight="30.0" prefWidth="1647.0" style="-fx-font-size: 20px;" styleClass="pixelText" text="" textAlignment="CENTER" />
+      <Rectangle fx:id="passwordResetWindow" arcHeight="5.0" arcWidth="5.0" fill="#aeaeae" height="505.0" layoutX="549.0" layoutY="415.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 2;" visible="false" width="824.0" />
+      <Text fx:id="passwordNeeded" layoutX="549.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="NEW PASSWORD NEEDED" textAlignment="CENTER" visible="false" wrappingWidth="824.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="passwordCode" layoutX="549.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="ENTER NEW PASSWORD" textAlignment="CENTER" visible="false" wrappingWidth="824.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="confirmButton" layoutX="857.0" layoutY="796.0" mnemonicParsing="false" onAction="#confirmResetPasswordButtonHandler" prefHeight="66.0" prefWidth="203.0" style="-fx-border-width: 3;" styleClass="coolButton" stylesheets="@stylesheet.css" text="CONFIRM" visible="false">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Button layoutX="1329.0" layoutY="415.0" mnemonicParsing="false" onAction="#xButtonHandler" prefHeight="24.0" prefWidth="43.0" stylesheets="@stylesheet.css" text="X" visible="false" fx:id="xButton">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="passwordInput" layoutX="784.0" layoutY="675.0" prefHeight="59.0" prefWidth="350.0" styleClass="loginTextbox" stylesheets="@stylesheet.css" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fx:id="passwordErrorMessage" fill="RED" layoutX="549.0" layoutY="772.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="PASSWORD MUST BE BIGGER THEN 3 CHARACTERS" textAlignment="CENTER" visible="false" wrappingWidth="824.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

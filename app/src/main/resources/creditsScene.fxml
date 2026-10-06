@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.airplanegame.sceneControllers.CreditsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="1088.0" stroke="BLACK" strokeType="INSIDE" width="672.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1096.0" layoutX="664.0" layoutY="-8.0" stroke="BLACK" strokeType="INSIDE" width="8.0" />
+      <Text id="title" fill="WHITE" layoutX="3.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="menu" text="CREDITS" wrappingWidth="665.0078125">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Text>
+      <Text style="-fx-font-size: 20px;" fill="WHITE" layoutX="98.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="pixelText" text="WALID SHAQOUR" textAlignment="CENTER" wrappingWidth="475.3334045410156" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonCredit" prefHeight="50.0" prefWidth="130.0" styleClass="coolButton" stylesheets="@stylesheet.css" text="BACK">
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="menu" />
+         </styleClass>
+      </Button>
+      <Text style="-fx-font-size: 20px;" fill="WHITE" layoutX="101.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="pixelText" text="CREATED BY TEAM 74:" textAlignment="CENTER" wrappingWidth="467.33340454101574" />
+      <Text style="-fx-font-size: 20px;" fill="WHITE" layoutX="108.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="pixelText" text="MARK ZIZA" textAlignment="CENTER" wrappingWidth="453.3334045410157" />
+      <Text style="-fx-font-size: 20px;" fill="WHITE" layoutX="98.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="pixelText" text="SAMAR KHAN" textAlignment="CENTER" wrappingWidth="475.3334045410156" />
+      <Text style="-fx-font-size: 20px;" fill="WHITE" layoutX="108.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="pixelText" text="ASEEM LAKHANPAL" textAlignment="CENTER" wrappingWidth="453.3334045410156" />
+      <Text style="-fx-font-size: 20px;" fill="WHITE" layoutX="102.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="pixelText" text="MITCHELL WALKER" textAlignment="CENTER" wrappingWidth="467.3334045410156" />
+      <Text style="-fx-font-size: 20px;" fill="WHITE" layoutX="120.0" layoutY="683.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="pixelText" text="WESTERN UNIVERSITY | CS 2212 | WINTER 2026" textAlignment="CENTER" wrappingWidth="430.6667175292969" />
+   </children>
+</AnchorPane>

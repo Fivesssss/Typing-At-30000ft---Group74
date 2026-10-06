@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="990.0" prefWidth="1920.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+
+      <Text layoutX="645.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            style="-fx-font-size: 40px;" styleClass="pixelText"
+            text="GENERAL SETTINGS" textAlignment="CENTER"
+            wrappingWidth="732.8033905029297" />
+
+      <Text layoutX="538.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            style="-fx-font-size: 20px;" styleClass="pixelText"
+            text="START ENDLESS SHORTCUT:" textAlignment="RIGHT"
+            wrappingWidth="588.1366901397705" />
+      <Label layoutX="1147.0" layoutY="255.0" prefHeight="40.0" prefWidth="120.0"
+             styleClass="pixelText" text="0" style="-fx-font-size: 18px;" />
+
+      <Text layoutX="538.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            style="-fx-font-size: 20px;" styleClass="pixelText"
+            text="LEVEL SELECT SHORTCUT:" textAlignment="RIGHT"
+            wrappingWidth="588.1366901397705" />
+      <Label layoutX="1147.0" layoutY="355.0" prefHeight="40.0" prefWidth="120.0"
+             styleClass="pixelText" text="9" style="-fx-font-size: 18px;" />
+
+      <Text layoutX="515.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            style="-fx-font-size: 20px;" styleClass="pixelText"
+            text="POWER-UP BINDS:" textAlignment="RIGHT"
+            wrappingWidth="610.8033466339111" />
+
+      <Text layoutX="880.0" layoutY="565.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            style="-fx-font-size: 18px;" styleClass="pixelText"
+            text="POWER-UP 1:" />
+      <Label layoutX="1147.0" layoutY="540.0" prefHeight="40.0" prefWidth="120.0"
+             styleClass="pixelText" text="1" style="-fx-font-size: 18px;"/>
+
+      <Text layoutX="880.0" layoutY="625.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            style="-fx-font-size: 18px;" styleClass="pixelText"
+            text="POWER-UP 2:" />
+      <Label layoutX="1147.0" layoutY="600.0" prefHeight="40.0" prefWidth="120.0"
+             styleClass="pixelText" text="2" style="-fx-font-size: 18px;"/>
+
+      <Text layoutX="880.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            style="-fx-font-size: 18px;" styleClass="pixelText"
+            text="POWER-UP 3:" />
+      <Label layoutX="1147.0" layoutY="660.0" prefHeight="40.0" prefWidth="120.0"
+             styleClass="pixelText" text="3" style="-fx-font-size: 18px;"/>
+
+      <Text layoutX="880.0" layoutY="745.0" strokeType="OUTSIDE" strokeWidth="0.0"
+            style="-fx-font-size: 18px;" styleClass="pixelText"
+            text="POWER-UP 4:" />
+      <Label layoutX="1147.0" layoutY="720.0" prefHeight="40.0" prefWidth="120.0"
+             styleClass="pixelText" text="4" style="-fx-font-size: 18px;"/>
+
+   </children>
+</AnchorPane>

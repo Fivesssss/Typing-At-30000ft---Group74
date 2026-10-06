@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080" prefWidth="1920" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.airplanegame.sceneControllers.SelectGameModeController">
+
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="1088.0" stroke="BLACK" strokeType="INSIDE" width="672.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1096.0" layoutX="664.0" layoutY="-8.0" stroke="BLACK" strokeType="INSIDE" width="8.0" />
+        <Button layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onAction="#backButtonHandler" styleClass="coolButton" stylesheets="@stylesheet.css" text="BACK" />
+      <Button layoutX="168.0" layoutY="402.0" mnemonicParsing="false" onAction="#levelsButtonHandler" prefHeight="261.0" prefWidth="336.0" styleClass="coolButton" stylesheets="@stylesheet.css" text="LEVEL MODE" />
+      <Button layoutX="168.0" layoutY="739.0" mnemonicParsing="false" onAction="#endlessButtonHandler" prefHeight="261.0" prefWidth="336.0" styleClass="coolButton" stylesheets="@stylesheet.css" text="ENDLESS MODE" />
+      <Text fill="WHITE" layoutX="73.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40px;" styleClass="pixelText" text="SELECT MODE" textAlignment="CENTER" wrappingWidth="526.1367130279541" />
+    </children>
+</AnchorPane>

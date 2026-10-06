@@ -1,0 +1,160 @@
+#title{
+    -fx-text-alignment: center;
+}
+
+#xButton{
+    -fx-background-color: transparent;
+    -fx-cursor: hand; /* changes the cursor to a hand */
+}
+
+#xButton:hover{
+    -fx-text-fill: red;
+}
+
+.loginTextbox{
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 18px;
+}
+
+.pixelText {
+    -fx-font-family: "Press Start 2P";
+}
+
+.menu{
+    -fx-font-family: "Press Start 2P";
+}
+
+.settingButton {
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 15px;
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+
+/* REMOVE flash on click */
+.settingButton:pressed {
+    -fx-background-color: grey;
+}
+
+/* REMOVE hover flash */
+.settingButton:hover {
+    -fx-background-color: grey;
+}
+
+/* REMOVE focus glow */
+.settingButton:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ONLY change when selected */
+.settingButton:selected {
+    -fx-background-color: #464646;
+    -fx-text-fill: white;
+}
+
+.accountTypeButton{
+    -fx-font-family: "Press Start 2P";
+    -fx-background-color: #444444; /* dark gray background */
+    -fx-text-fill: #FFFFFF; /* white text */
+    -fx-font-size: 14px;
+    -fx-border-color: #FFFFFF; /* white border */
+    -fx-border-width: 1px;
+    -fx-background-radius: 0; /* removes rounded corners */
+    -fx-border-radius: 0;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand; /* changes the cursor to a hand */
+}
+
+.accountTypeButton:hover{
+    -fx-background-color: #FFFFFF; /* invert the colors of the buttons background */
+    -fx-text-fill: #000000; /* invert the colors of the buttons text */
+}
+
+.coolButton{
+    -fx-font-family: "Press Start 2P";
+    -fx-background-color: #000000; /* black background */
+    -fx-text-fill: #FFFFFF; /* white text */
+    -fx-font-size: 18px;
+    -fx-border-color: #FFFFFF; /* white border */
+    -fx-border-width: 4px;
+    -fx-background-radius: 0; /* removes rounded corners */
+    -fx-border-radius: 0;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand; /* changes the cursor to a hand */
+}
+
+.coolButton:hover{
+    -fx-background-color: #FFFFFF; /* invert the colors of the buttons background */
+    -fx-text-fill: #000000; /* invert the colors of the buttons text */
+}
+
+.coolButton:pressed{
+    -fx-translate-y: 4px; /* moves the button down slightly */
+    -fx-background-color: #AAAAAA; /* button turns grey when clicked */
+}
+
+.dangerButton{
+    -fx-font-family: "Press Start 2P";
+    -fx-background-color: red;
+    -fx-font-weight: bold;
+}
+
+.pauseButton{
+    -fx-background-color: BLACK;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 52px;
+    -fx-background-radius: 4;
+    -fx-cursor: hand; /* changes the cursor to a hand */
+    -fx-pref-width: 600px;
+}
+
+.gameOverRestartButton {
+    -fx-pref-width: 370px;
+    -fx-pref-height: 150px;
+    -fx-background-color: #5B9BD5;
+    -fx-text-fill: white;
+    -fx-font-family: 'Press Start 2P';
+    -fx-font-size: 32px;
+    -fx-border-color: #2E5C8A;
+    -fx-border-width: 4;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #2E5C8A, 0, 1, 6, 6);
+}
+
+.gameOverRestartButton:hover {
+    -fx-background-color: #7AAFE5;
+}
+
+.gameOverRestartButton:pressed {
+    -fx-translate-x: 6px;
+    -fx-translate-y: 6px;
+    -fx-effect: none;
+}
+
+.gameOverMenuButton {
+    -fx-pref-width: 370px;
+    -fx-pref-height: 150px;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #2E5C8A;
+    -fx-font-family: 'Press Start 2P';
+    -fx-font-size: 32px;
+    -fx-border-color: #5B9BD5;
+    -fx-border-width: 4;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #5B9BD5, 0, 1, 6, 6);
+}
+
+.gameOverMenuButton:hover {
+    -fx-background-color: #E8F4F8;
+}
+
+.gameOverMenuButton:pressed {
+    -fx-translate-x: 6px;
+    -fx-translate-y: 6px;
+    -fx-effect: none;
+}
+
+
+
